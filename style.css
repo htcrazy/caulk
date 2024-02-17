@@ -54,9 +54,8 @@ body {
     padding-left: 100px;
     padding-right: 100px;
     max-width: 1200px;
-    align-items: center;
-    justify-content: space-between;
-    gap: 30px;
+    align-items: center;    
+    gap: 70px;
 }
 
 .ad-button {
@@ -64,8 +63,8 @@ body {
     border: 2px solid #ffffff;
     border-radius: 5px;
     padding: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
     font-weight: 600;
 }
 
@@ -89,6 +88,7 @@ body {
     font-weight: 900;
     justify-content: right;
     padding-right: 10px;
+    margin-top: 5px;
 }
 
 .random-info {
@@ -134,8 +134,7 @@ body {
 
 .menu {
     display: flex;
-    margin-top: 5px;
-    width: 1200px;
+    margin-top: 10px;
     gap: 15px;
     align-items: flex-end;
 }
@@ -157,7 +156,43 @@ a:active {
 }
 
 .banner {
-    border: 1px solid white;
-    margin: 50px;
-    width: 1200px;
+    display: flex;
+    margin: 75px 0px;   
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.left-banner {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.img-placeholder {
+    display: flex;
+    background-color: #808080;
+    padding: 40px 120px;
+    text-wrap: nowrap;
+    align-items: center;
+}
+
+.ad-button-top {
+    background-color: #3882F6;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-weight: 600;
+    margin-bottom: auto;
+}
+
+.banner-header {
+    font-size: 48px;
+    font-weight: 800;
+}
+
+.menu-banner-box {
+    max-width: 1200px;
 }
