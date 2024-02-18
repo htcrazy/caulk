@@ -1,0 +1,49 @@
+const select = document.querySelector('.terminal-commands');
+const para = document.querySelector('.box-info');
+
+select.addEventListener("change", setWeather);
+
+function setWeather() {
+    const choice = select.value;
+
+    switch (choice) {
+        case "mkdir":
+            para.textContent = "mkdir POO";
+            break;
+        case "cd-parent":
+            para.textContent = "cd ..";
+            break;
+        case "cd-root":
+            para.textContent = "cd";
+            break;
+        case "cd-poo":
+            para.textContent = "cd POO";
+            break;
+        case "git-clone":
+            para.textContent = "git clone *SSH_link*";
+            break;
+        case "make-poo":
+            para.textContent = "touch poo.sex";
+            break;
+        case "add-poo":
+            para.textContent = "git add poo.sex";
+            break;
+        case "add-all":
+            para.textContent = "git add -A";
+            break;
+        case "commit":
+            para.textContent = "git commit -m 'message'";
+            break;
+        case "push":
+            para.textContent = '"git push" or "git push origin main"';
+            break;
+        case "git-log":
+            para.textContent = "git log";
+            break;
+        case "git-status":
+            para.textContent = "git status";
+            break;
+        default:
+            para.textContent = "";
+    }
+}
