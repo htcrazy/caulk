@@ -100,22 +100,51 @@ body {
     font-style: italic;
 }
 
+.box-container {
+    display: flex;
+    margin-bottom: 50px;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    justify-content: center;
+    margin-top: 25px;
+}
+
 .box-info {
+    display: flex;
+    border: 3px solid #3882F6;
+    border-radius: 7px;
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+}
+
+.box-infoz {
     display: flex;
     border: 3px solid #3882F6;
     border-radius: 7px;
     margin: 5px;
     width: 500px;
-    height: 45px;
+    min-height: 45px;
     justify-content: center;
     align-items: stretch;
     text-align: center;
     font-size: 30px;
 }
 
-.terminal-commands {
-    margin: 5px 80px;
+.caption {
+    width: 200px;
+    margin-left: 6px;
+    margin-right: 6px;
+    text-align: center;
+    font-weight: 300;
+    text-wrap: wrap;
 }
+
 
 .menu {
     display: flex;
@@ -158,8 +187,7 @@ a:active {
 .img-placeholder {
     display: flex;
     background-color: #808080;
-    padding: 40px;
-    width: 300px;
+    padding: 40px 120px;
     text-wrap: nowrap;
     align-items: center;
 }

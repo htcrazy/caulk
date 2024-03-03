@@ -33,8 +33,9 @@
 
         <div class="white-container">
             <div class="random-info">Tengo huevos grandes.</div>
-            <p class="box-info"></p>
-            <select class="terminal-commands">
+
+            <p class="box-infoz" ></p>
+            <select class="terminal-commands" onchange="setWeather()">
                 <option value="">--Select a choice--</option>
                 <option value="mkdir">make folder named POO</option>
                 <option value="cd-parent">go to parent folder of current directory</option>
@@ -45,13 +46,67 @@
                 <option value="add-poo">adds poo.sex to the staging area in git</option>
                 <option value="add-all">adds everything to the staging area in git</option>
                 <option value="commit">commits whatever changes to next push</option>
-                <option value="push">push all changes to main branch</option>
+                <option value="push">push all changes to repository</option>
                 <option value="git-log">looks at history of Git</option>
                 <option value="git-status">checks status of Git</option>
+                <option value="git-new-branch">make a new branch and change to it</option>
+                <option value="branch-check">check what branch you are on</option>
+                <option value="change-branch">change to another branch</option>
+                <option value="merge-branch">merge branch onto main</option>
+                <option value="delete-branch">delete branch locally</option>
+                <option value="delete-branch-repo">delete branch on remote repo</option>
             </select>
-            <script type="text/javascript" src ="scripts.js">
-                setWeather();
-            </script>
+
+            <div class="box-container">
+                <div>
+                    <p class="box-info">mkdir POO</p>
+                    <p class="caption">make folder named POO</p>
+                </div>
+                <div>
+                    <div class="box-info">cd ..</div>
+                    <p class="caption">go to parent folder of current directory</p>
+                </div>
+                <div>
+                    <div class="box-info">cd</div>
+                    <p class="caption">go to root folder</p>
+                </div>
+                <div>
+                    <div class="box-info">cd POO</div>
+                    <p class="caption">go into POO folder of current directory</p>
+                </div>
+                <div>
+                    <div class="box-info">git clone *SSH_link*</div>
+                    <p class="caption">clone repository to local machine</p>
+                </div>
+                <div>
+                    <div class="box-info">touch poo.sex</div>
+                    <p class="caption">creates a .sex file called poo</p>
+                </div>
+                <div>
+                    <div class="box-info">git add poo.sex</div>
+                    <p class="caption">adds poo.sex to the staging area in git</p>
+                </div>
+                <div>
+                    <div class="box-info">git add -A</div>
+                    <p class="caption">adds everything to the staging area in git</p>
+                </div>
+                <div>
+                    <div class="box-info">git commit -m 'message'</div>
+                    <p class="caption">commits whatever changes to next push</p>
+                </div>
+                <div>
+                    <div class="box-info">"git push" or "git push origin main"</div>
+                    <p class="caption">push all changes to main branch</p>
+                </div>
+                <div>
+                    <div class="box-info">git log</div>
+                    <p class="caption">looks at history of Git</p>
+                </div>
+                <div>
+                    <div class="box-info">git status</div>
+                    <p class="caption">checks status of Git</p>
+                </div>
+            </div>
         </div>
 
         <div class="grey-container">
@@ -78,5 +133,7 @@
         <div class="footer dark-container">
             Copyright &#169; The Odin Project 2021
         </div>
+        
+        <script src ="scripts.js"></script>
     </body>
 </html>
